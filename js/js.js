@@ -1,10 +1,13 @@
 var score = 0
+console.log('step1')
 $('[class^=cir]').click(function (evt) {
-  // console.log(this)
+  console.log('step2')
+  console.log(this)
   var num = $(this).attr('data-label')
-  // console.log(num)
+  console.log(num)
   score += parseInt(num * 10)
   updateGame()
+  console.log('up')
 })
 function updateGame() {
   $('.score').text('Score: ' + score)
@@ -33,6 +36,7 @@ $(window).mousemove(function (evt) {
 })
 
 $('.target').click(function (evt) {
+  console.log('hi')
   var spot = $('<div class=spot></div>')
   console.log(spot)
   spot
