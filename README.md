@@ -1,1 +1,1 @@
-# shoot
+https://wuchipang.github.io/shoot
